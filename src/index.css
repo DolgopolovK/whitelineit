@@ -1,0 +1,93 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* HeroCards background  */
+.shadow {
+  position: absolute;
+  background: hsl(var(--shadow) / 100%);
+  
+  border-radius: 24px;
+  rotate: 50deg;
+  z-index: -1;
+  width: 260px;
+  top: 200px;
+  height: 400px;
+  filter: blur(150px);
+  will-change: transform;
+  animation: shadow-slide infinite 2s linear alternate;
+}
+
+@keyframes shadow-slide {
+  from {
+    background: hsl(var(--shadow) / 100%);
+    right: 460px;
+  }
+  to {
+    background: hsl(var(--shadow) / 100%);
+    right: 160px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .shadow {
+    top: 70px;
+  }
+
+  @keyframes shadow-slide {
+    from {
+      background: hsl(var(--shadow) / 100%);
+      right: 460px;
+    }
+    to {
+      background: hsl(var(--shadow) / 100%);
+      right: 160px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .shadow {
+    top: 70px;
+    width: 100px;
+    height: 350px;
+    filter: blur(60px);
+  }
+
+  @keyframes shadow-slide {
+    from {
+      background: hsl(var(--shadow) / 100%);
+      right: 280px;
+    }
+    to {
+      background: hsl(var(--shadow) / 100%);
+      right: 100px;
+    }
+  }
+}
+@keyframes drawLine {
+  0% {
+    width: 0;
+    clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
+  }
+  25% {
+    width: 25%;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+  }
+  50% {
+    width: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  75% {
+    width: 75%;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+  }
+  100% {
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+.animate-draw-line {
+  animation: drawLine 3s ease-in-out forwards;
+}
