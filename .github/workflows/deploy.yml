@@ -1,0 +1,33 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy via SSH
+        uses: appleboy/scp-action@v1
+        with:
+          host: ${{ secrets.TIMEWEB_HOST }}  # IP или домен сервера
+          username: ${{ secrets.TIMEWEB_USERNAME }}
+          key: ${{ secrets.TIMEWEB_SSH_KEY }}
+          source: "./build/*"
+          target: "/var/www/white_line/public_html"  
