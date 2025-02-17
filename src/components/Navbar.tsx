@@ -16,7 +16,7 @@ import {
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 
-import { LogoIcon } from "./Icons";
+
 
 interface RouteProps {
   href: string;
