@@ -16,7 +16,7 @@ import {
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 
-import { LogoIcon } from "./Icons";
+
 
 interface RouteProps {
   href: string;
@@ -32,10 +32,7 @@ const routeList: RouteProps[] = [
     href: "#testimonials",
     label: "Блог",
   },
-  {
-    href: "#pricing",
-    label: "Стоимость",
-  },
+
   {
     href: "#faq",
     label: "FAQ",
@@ -128,7 +125,7 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="/"
+              href="https://t.me/white_line_It"
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >

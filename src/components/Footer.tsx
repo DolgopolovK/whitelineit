@@ -1,54 +1,27 @@
-import { LogoIcon } from "./Icons";
+import cube from "../assets/Group 1.png"
 
 export const Footer = () => {
   return (
     <footer id="footer">
       <hr className="w-11/12 mx-auto" />
 
-      <section className="container py-20 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
-        <div className="col-span-full xl:col-span-2">
+      <section className="container py-20 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-x-12 gap-y-8">
+        <div className="col-span-full xl:col-span-2 justify-start">
           <a
             rel="noreferrer noopener"
             href="/"
-            className="font-bold text-xl flex"
+            className="font-bold text-xl flex flex-col items-center"
           >
-            
+            <img 
+        src={cube} 
+        alt="Illustration" 
+        className="w-16 h-16 md:w-20 md:h-20 xl:w-24 xl:h-24 object-contain mb-4" // здесь можно настроить размер
+      />
             WHITELINE IT
           </a>
         </div>
 
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Услуги</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Стоимость услуг
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-            
-            </a>
-          </div>
-        </div>
+       
 
         
 
@@ -90,30 +63,20 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://www.linkedin.com/company/white-line-it/"
               className="opacity-60 hover:opacity-100"
             >
-              Youtube
+              Linkedin
             </a>
           </div>
 
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://t.me/white_line_group"
               className="opacity-60 hover:opacity-100"
             >
-              ВК
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Habr
+              Telegram
             </a>
           </div>
         </div>

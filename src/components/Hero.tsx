@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { buttonVariants } from "./ui/button";
+
 import { HeroCards } from "./HeroCards";
 
 
@@ -20,9 +20,10 @@ export const Hero = () => {
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-6">
-          <Button onClick={() => window.open("", "_blank")}
+          <Button onClick={() => window.open("https://t.me/white_line_It", "_blank")}
   className="w-full md:w-1/2 py-6"
 >
+
 Связаться с менеджером
           </Button>
         </div>

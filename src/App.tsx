@@ -7,7 +7,7 @@ import { Hero } from "./components/Hero";
 import { HowItWorks } from "./components/HowItWorks";
 import { Navbar } from "./components/Navbar";
 import { Newsletter } from "./components/Newsletter";
-import { Pricing } from "./components/Pricing";
+
 import { ScrollToTop } from "./components/ScrollToTop";
 
 
@@ -24,11 +24,10 @@ function App() {
       <About />
       <HowItWorks />
       <Features />
-    
+      
 
       <Testimonials />
 
-      <Pricing />
       <Newsletter />
       <FAQ />
       <Footer />
