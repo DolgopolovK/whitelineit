@@ -18,21 +18,21 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Дизайнеры",
+    title: "Аналитики",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Бизнес аналитики, системные аналитики",
     image: image4,
   },
   {
     title: "Разработчики",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Backend, frontend, devOps",
     image: image3,
   },
   {
-    title: "AI-Powered insights",
+    title: "Дизайнеры",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "UI/UX, продуктовый дизайнер, графический дизайнер",
     image: image,
   },
 ];
@@ -87,7 +87,7 @@ export const Features = () => {
               <img
                 src={image}
                 alt="About feature"
-                className="w-[200px] lg:w-[300px] mx-auto"
+                className="w-[200px] lg:w-[300px] mx-auto h-[300px]"
               />
             </CardFooter>
           </Card>
