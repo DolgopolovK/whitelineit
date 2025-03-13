@@ -84,7 +84,7 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2025 Название компании{" "}
+          &copy; 2025 WHITLINE IT{" "}
           <a
             rel="noreferrer noopener"
             target="_blank"
